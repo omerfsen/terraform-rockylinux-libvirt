@@ -28,9 +28,9 @@ resource "libvirt_cloudinit_disk" "rocky9_cloudinit_disk" {
 }
 
 resource "libvirt_domain" "rocky9" {
-  name   = var.rocky9_domain_name
-  memory = var.rocky9_domain_memory
-  vcpu   = var.rocky9_domain_vcpu
+  name       = var.rocky9_domain_name
+  memory     = var.rocky9_domain_memory
+  vcpu       = var.rocky9_domain_vcpu
   qemu_agent = "false"
 
   network_interface {
