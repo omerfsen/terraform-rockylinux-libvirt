@@ -60,4 +60,3 @@ resource "libvirt_domain" "rocky9" {
     autoport    = true
   }
 }
-

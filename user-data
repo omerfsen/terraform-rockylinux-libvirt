@@ -101,12 +101,12 @@ runcmd:
 #  auto-attach: True
 #  service-level: self-support
 #
-# subscription-manager register --org=11xxxxx --activationkey=yyyyy  --auto-attach 
+# subscription-manager register --org=11xxxxx --activationkey=yyyyy  --auto-attach
 #rh_subscription:
 #  activation-key: yyyyy
 #  org: 11xxxx
 #  auto-attach: true
-#  service-level: self-support 
+#  service-level: self-support
 #  enable-repo:
 #    - rhel-9-for-x86_64-baseos-rpms
 #    - rhel-9-for-x86_64-appstream-rpms
