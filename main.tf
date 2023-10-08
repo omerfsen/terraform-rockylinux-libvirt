@@ -3,6 +3,7 @@ resource "libvirt_volume" "rocky9_qcow2" {
   name = var.rocky9_volume_name
   pool = var.rocky9_volume_pool
   #source = "https://download.rockylinux.org/pub/rocky/9.1/images/x86_64/Rocky-9-GenericCloud.latest.x86_64.qcow2"
+  # https://rocky-linux-europe-west2.production.gcp.mirrors.ctrliq.cloud/pub/rocky/9/images/x86_64/Rocky-9-GenericCloud-Base-9.2-20230513.0.x86_64.qcow2
   source = var.rocky9_volume_source
   format = var.rocky9_volume_format
   // size  = var.rocky9_volume_size
