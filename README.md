@@ -20,18 +20,18 @@ Terraform to Create Rocky Linux on KVM/Libvirt
 
 | Name | Description | Type | Required |
 |------|-------------|------|:--------:|
-| <a name="input_rocky9_cloudinit_disk"></a> [rocky9\_cloudinit\_disk](#input\_rocky9\_cloudinit\_disk) | n/a | `any` | yes |
-| <a name="input_rocky9_cloudinit_pool"></a> [rocky9\_cloudinit\_pool](#input\_rocky9\_cloudinit\_pool) | n/a | `any` | yes |
-| <a name="input_rocky9_domain_memory"></a> [rocky9\_domain\_memory](#input\_rocky9\_domain\_memory) | n/a | `any` | yes |
-| <a name="input_rocky9_domain_name"></a> [rocky9\_domain\_name](#input\_rocky9\_domain\_name) | n/a | `any` | yes |
-| <a name="input_rocky9_domain_vcpu"></a> [rocky9\_domain\_vcpu](#input\_rocky9\_domain\_vcpu) | n/a | `any` | yes |
-| <a name="input_rocky9_name"></a> [rocky9\_name](#input\_rocky9\_name) | n/a | `any` | yes |
-| <a name="input_rocky9_network_name"></a> [rocky9\_network\_name](#input\_rocky9\_network\_name) | n/a | `any` | yes |
-| <a name="input_rocky9_volume_format"></a> [rocky9\_volume\_format](#input\_rocky9\_volume\_format) | n/a | `any` | yes |
-| <a name="input_rocky9_volume_name"></a> [rocky9\_volume\_name](#input\_rocky9\_volume\_name) | n/a | `any` | yes |
-| <a name="input_rocky9_volume_pool"></a> [rocky9\_volume\_pool](#input\_rocky9\_volume\_pool) | n/a | `any` | yes |
+| <a name="input_rocky9_cloudinit_disk"></a> [rocky9\_cloudinit\_disk](#input\_rocky9\_cloudinit\_disk) | Qcow2 cloud-init location | `any` | yes |
+| <a name="input_rocky9_cloudinit_pool"></a> [rocky9\_cloudinit\_pool](#input\_rocky9\_cloudinit\_pool) | Which Pool to located cloud-init.iso | `any` | yes |
+| <a name="input_rocky9_domain_memory"></a> [rocky9\_domain\_memory](#input\_rocky9\_domain\_memory) | Vm Memory | `any` | yes |
+| <a name="input_rocky9_domain_name"></a> [rocky9\_domain\_name](#input\_rocky9\_domain\_name) | VM name | `any` | yes |
+| <a name="input_rocky9_domain_vcpu"></a> [rocky9\_domain\_vcpu](#input\_rocky9\_domain\_vcpu) | VM Cpu count | `any` | yes |
+| <a name="input_rocky9_name"></a> [rocky9\_name](#input\_rocky9\_name) | VM name | `any` | yes |
+| <a name="input_rocky9_network_name"></a> [rocky9\_network\_name](#input\_rocky9\_network\_name) | VM Network name | `any` | yes |
+| <a name="input_rocky9_volume_format"></a> [rocky9\_volume\_format](#input\_rocky9\_volume\_format) | Volume format .. Qcow2 | `any` | yes |
+| <a name="input_rocky9_volume_name"></a> [rocky9\_volume\_name](#input\_rocky9\_volume\_name) | Qcow2 volume name | `any` | yes |
+| <a name="input_rocky9_volume_pool"></a> [rocky9\_volume\_pool](#input\_rocky9\_volume\_pool) | Pool to locate VM | `any` | yes |
 | <a name="input_rocky9_volume_size"></a> [rocky9\_volume\_size](#input\_rocky9\_volume\_size) | size in bytes ... equals to 30GB https://registry.terraform.io/providers/dmacvicar/libvirt/latest/docs/resources/volume#size | `any` | yes |
-| <a name="input_rocky9_volume_source"></a> [rocky9\_volume\_source](#input\_rocky9\_volume\_source) | n/a | `any` | yes |
+| <a name="input_rocky9_volume_source"></a> [rocky9\_volume\_source](#input\_rocky9\_volume\_source) | Rocky linux Qcow2 disk image | `any` | yes |
 
 ## Outputs
 
