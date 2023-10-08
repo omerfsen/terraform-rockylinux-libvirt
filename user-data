@@ -1,17 +1,9 @@
-## https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/cloudinit_config
 #cloud-config
-# vim: syntax=yaml
-#
-# https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/composing_a_customized_rhel_system_image/preparing-and-deploying-kvm-guest-images-with-image-builder_composing-a-customized-rhel-system-image#creating-a-virtual-machine-from-a-kvm-guest-image_preparing-and-deploying-kvm-guest-images-with-image-builder
-# https://cloudinit.readthedocs.io/en/latest/topics/examples.html
-# mkpasswd --method=SHA-512 --rounds=4096
-
 growpart:
   mode: auto
   devices: ["/"]
   ignore_growroot_disabled: false
 
-# https://cloudinit.readthedocs.io/en/latest/topics/modules.html#resizefs
 resize_rootfs: noblock
 
 chpasswd:
@@ -25,14 +17,14 @@ users:
     shell: /bin/bash
     sudo: ['ALL=(ALL) NOPASSWD:ALL']
     groups: adm,wheel
-    passwd: $6$12345678910
+    passwd: $6$HE/RBjEb$dQXF27SB4..................
     lock_passwd: false
     ssh_authorized_keys:
       - "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAsA1JBEUJMBkDmWXlceuqV77pUoUF6O0gGJTcnwcCOQAR6fNWzZJkf8Fjp/nyjENg9sZyE9whZUqBBXO25H6apSD47Jx0ebHZbH+F5CBo8onG1UwmILWMZMDuIPdRiIS5L7eoyYJ6cGTriJu7ABaUpu9As+Wkj0C62uhb240AJPdsADKNhfvmBED+l9H2vt9EpStweMYjD+xqO9ZxW6E/0cfWrJyjE3M7t1lqtbVadV0F73clOHPC51FirEj/G0QCSvkmppBKTl73gLRe6AVmP0+eQIYU9QLIHiWATDa73veB+t1E7vib5JxCQo8//jSiFjNgs/KY0yZuOCj7PUxPow== ofsen@ocean.faruk.net"
       - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDFF4U68b4mR8YBBq76u+UzNjCu+epodUgc3HbUTFMWhY2arZdzPHlsuI7bgqXD38dCyVtn2MD6pxdIm+cOv9RVQn2h9taHF7Iywxh6oxaQUlxQ19WYPEfQ7ZuWhZyIFG8TDlfBWaUlZOVbNl0e3TdRA3DQYkbx2W6hnXShB1Gf+NdV1C6y3jwyaV4UcbaMv4irKyc8BWPzpHBD67bOJ3RMzQ+1Vhny2nYboF3oAnM12ab9D8fzVYGr0Wy+Hd7JHMjMeYLgqr+BSltnSi+VhD5f1thCGZryprogQd4YcuKFCqin+yK72mn8bwfL/nTLV/XPaAAZM3ZE6eMhRghpfJ+hn3DFTkQGFwk1VJI9gHvIdZVeU8/sz7Y9ZT2pWzHLQrb7w12vFwBCnUvxQZyylLCXx9pw1CGmK3nzlJPSL79q5Yd/v1YNn/D8L2LlOzyPeHeTlCinCUwRBGj2zCKRmlNViq34NduI+4H3T5+T63J2uDXCXZ6ihyP3lI1EkPKMJQc= root@azure"
       - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQtHcKWdBG3rUXmZlvKImL5cp8TgG1Y326uSoWCA4JALCXzH9VvCjd1F/KkivffRS205TuPyylnFLVFNBX5WiSaIpF6+Is/nRI1SDe4Zp2EWgHKyDaLbGFYtoOOU+EGk8sNj3rxIMNcG2hjPRf5JHhaz3c84Ra6wlsZInH6dQsnI9wMlNEDe1wlDWsp13k1aw7w8YKgIOQNFh4ZcIbM1MZXuEqV8x4RBUChjFbVarh0m59O9AYntm+iF2qFpmIZOQgFqsrbf4yufWGusHyO9ZMELYi9/TUnEcisbgepzAFzifX3Y8z1DIiPR9iny3zig9vrNiNJ2/nDW/RiGKHBc33 root@ovh.serra.pw"
   - name: root
-    passwd: $6$12345678910
+    passwd: $6$l8cuFHX3KS.......................
     ssh_authorized_keys:
       - "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAsA1JBEUJMBkDmWXlceuqV77pUoUF6O0gGJTcnwcCOQAR6fNWzZJkf8Fjp/nyjENg9sZyE9whZUqBBXO25H6apSD47Jx0ebHZbH+F5CBo8onG1UwmILWMZMDuIPdRiIS5L7eoyYJ6cGTriJu7ABaUpu9As+Wkj0C62uhb240AJPdsADKNhfvmBED+l9H2vt9EpStweMYjD+xqO9ZxW6E/0cfWrJyjE3M7t1lqtbVadV0F73clOHPC51FirEj/G0QCSvkmppBKTl73gLRe6AVmP0+eQIYU9QLIHiWATDa73veB+t1E7vib5JxCQo8//jSiFjNgs/KY0yZuOCj7PUxPow== user1"
       - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDFF4U68b4mR8YBBq76u+UzNjCu+epodUgc3HbUTFMWhY2arZdzPHlsuI7bgqXD38dCyVtn2MD6pxdIm+cOv9RVQn2h9taHF7Iywxh6oxaQUlxQ19WYPEfQ7ZuWhZyIFG8TDlfBWaUlZOVbNl0e3TdRA3DQYkbx2W6hnXShB1Gf+NdV1C6y3jwyaV4UcbaMv4irKyc8BWPzpHBD67bOJ3RMzQ+1Vhny2nYboF3oAnM12ab9D8fzVYGr0Wy+Hd7JHMjMeYLgqr+BSltnSi+VhD5f1thCGZryprogQd4YcuKFCqin+yK72mn8bwfL/nTLV/XPaAAZM3ZE6eMhRghpfJ+hn3DFTkQGFwk1VJI9gHvIdZVeU8/sz7Y9ZT2pWzHLQrb7w12vFwBCnUvxQZyylLCXx9pw1CGmK3nzlJPSL79q5Yd/v1YNn/D8L2LlOzyPeHeTlCinCUwRBGj2zCKRmlNViq34NduI+4H3T5+T63J2uDXCXZ6ihyP3lI1EkPKMJQc= user2@domain"

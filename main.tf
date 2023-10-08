@@ -32,7 +32,7 @@ resource "libvirt_domain" "rocky9" {
   name       = var.rocky9_domain_name
   memory     = var.rocky9_domain_memory
   vcpu       = var.rocky9_domain_vcpu
-  qemu_agent = "false"
+  qemu_agent = true
 
   network_interface {
     network_name = var.rocky9_network_name
@@ -47,7 +47,7 @@ resource "libvirt_domain" "rocky9" {
 
   console {
     type        = "pty"
-    target_type = "serial"
+    target_type = "virtio"
     target_port = "0"
   }
 
