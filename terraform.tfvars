@@ -10,4 +10,4 @@ rocky9_volume_name    = "Golden_Rocky_9_4-TF.qcow2"
 rocky9_volume_pool    = "default"
 rocky9_volume_size    = "32212254720"
 # https://dl.rockylinux.org/pub/rocky/9/images/x86_64/Rocky-9-GenericCloud-Base-9.4-20240509.0.x86_64.qcow2
-rocky9_volume_source  = "/data/iso/Rocky/9/Rocky-9-GenericCloud-Base-9.4-20240509.0.x86_64.qcow2"
+rocky9_volume_source = "/data/iso/Rocky/9/Rocky-9-GenericCloud-Base-9.4-20240509.0.x86_64.qcow2"

@@ -6,14 +6,14 @@ Terraform to Create Rocky Linux on KVM/Libvirt
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | = 1.5.7 |
-| <a name="requirement_libvirt"></a> [libvirt](#requirement\_libvirt) | 0.7.1 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | = 1.8.3 |
+| <a name="requirement_libvirt"></a> [libvirt](#requirement\_libvirt) | 0.7.6 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_libvirt"></a> [libvirt](#provider\_libvirt) | 0.7.1 |
+| <a name="provider_libvirt"></a> [libvirt](#provider\_libvirt) | 0.7.6 |
 | <a name="provider_template"></a> [template](#provider\_template) | n/a |
 
 ## Inputs

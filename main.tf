@@ -22,6 +22,8 @@ data "template_file" "meta_data" {
 }
 
 resource "libvirt_cloudinit_disk" "rocky9_cloudinit_disk" {
+  # name cant contain path
+  #name      = "${path.module}/${var.rocky9_cloudinit_disk}"
   name      = var.rocky9_cloudinit_disk
   pool      = var.rocky9_cloudinit_pool
   user_data = data.template_file.user_data.rendered
